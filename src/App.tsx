@@ -49,7 +49,7 @@ function App() {
             <div className="hero-header-row">
               <div className="profile-image-container">
                 {/* User can replace profile.jpeg in the public folder */}
-                <img src="/profile.jpeg" alt="Yogeshwaran G" className="profile-image" onError={(e) => { e.currentTarget.src = 'https://ui-avatars.com/api/?name=YG&background=0a0a0a&color=00f0ff&size=150' }} />
+                <img src="profile.jpeg" alt="Yogeshwaran G" className="profile-image" onError={(e) => { e.currentTarget.src = 'https://ui-avatars.com/api/?name=YG&background=0a0a0a&color=00f0ff&size=150' }} />
               </div>
               <div>
                 <p className="hero-greeting font-mono">Hi, my name is</p>
