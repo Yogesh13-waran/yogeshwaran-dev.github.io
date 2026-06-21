@@ -134,7 +134,7 @@ function App() {
             </div>
           </div>
 
-          <div className="bento-card glass-panel">
+          <div className="bento-card glass-panel large">
             <div className="bento-header">
               <span style={{color: 'var(--accent-purple)'}}>🧠</span> AI Orchestration
             </div>
