@@ -8,7 +8,7 @@ import './timeline.css';
 
 function App() {
   const [typingText, setTypingText] = useState('');
-  const fullText = " Initializing Agentic Workflow...\\n> Loading System Architecture...\\n> Booting Scalable UIs...\\n> Status: Online.";
+  const fullText = " IInitializing Agentic Workflow...\\n> Loading System Architecture...\\n> Booting Scalable UIs...\\n> Status: Online.";
   
   // Terminal typing effect
   useEffect(() => {
