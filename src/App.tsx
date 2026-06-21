@@ -49,7 +49,7 @@ function App() {
             <div className="hero-header-row">
               <div className="profile-image-container">
                 {/* User can replace profile.jpeg in the public folder */}
-                <img src="profile.jpeg" alt="Yogeshwaran G" className="profile-image" onError={(e) => { e.currentTarget.src = 'https://ui-avatars.com/api/?name=YG&background=0a0a0a&color=00f0ff&size=150' }} />
+                <img src="/profile.jpeg" alt="Yogeshwaran G" className="profile-image" onError={(e) => { e.currentTarget.src = 'https://ui-avatars.com/api/?name=YG&background=0a0a0a&color=00f0ff&size=150' }} />
               </div>
               <div>
                 <p className="hero-greeting font-mono">Hi, my name is</p>
@@ -66,7 +66,8 @@ function App() {
             </p>
 
             <div className="hero-actions" style={{ marginTop: '1rem' }}>
-              <a href="/Yogeshwaran_Resume.pdf" target="_blank" rel="noreferrer" className="skill-pill" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '1rem', padding: '0.75rem 1.5rem', background: 'var(--accent-cyan-glow)', borderColor: 'var(--accent-cyan)' }}>
+              {/* Removed leading slash so it works with GitHub Pages base path */}
+              <a href="Yogeshwaran_Resume.pdf" target="_blank" rel="noreferrer" className="skill-pill" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '1rem', padding: '0.75rem 1.5rem', background: 'var(--accent-cyan-glow)', borderColor: 'var(--accent-cyan)' }}>
                 <span>📄</span> Download Resume
               </a>
             </div>
@@ -95,44 +96,68 @@ function App() {
           
           <div className="bento-card glass-panel large">
             <div className="bento-header">
-              <span style={{color: 'var(--accent-cyan)'}}>✦</span> Backend & Architecture
+              <span style={{color: 'var(--accent-cyan)'}}>⚙️</span> Backend Architecture
             </div>
             <p style={{color: 'var(--text-muted)'}}>Designing horizontally scalable, event-driven distributed systems.</p>
             <div className="skill-pills">
               <span className="skill-pill">Node.js</span>
               <span className="skill-pill">Express.js</span>
-              <span className="skill-pill">MongoDB</span>
-              <span className="skill-pill">Redis / BullMQ</span>
               <span className="skill-pill">RESTful APIs</span>
               <span className="skill-pill">Micro-endpoints</span>
               <span className="skill-pill">Mutex Locking</span>
+              <span className="skill-pill">Distributed Queues (BullMQ)</span>
             </div>
           </div>
 
           <div className="bento-card glass-panel">
             <div className="bento-header">
-              <span style={{color: 'var(--accent-purple)'}}>✦</span> Frontend UI
+              <span style={{color: 'var(--accent-purple)'}}>⚛️</span> Frontend Engineering
             </div>
             <p style={{color: 'var(--text-muted)'}}>Building strict 60FPS dynamic rendering engines.</p>
             <div className="skill-pills">
               <span className="skill-pill">React.js</span>
               <span className="skill-pill">TypeScript</span>
               <span className="skill-pill">Redux Toolkit</span>
-              <span className="skill-pill">Material-UI</span>
+              <span className="skill-pill">Material-UI (MUI)</span>
             </div>
           </div>
 
           <div className="bento-card glass-panel">
             <div className="bento-header">
-              <span style={{color: 'var(--accent-cyan)'}}>✦</span> AI & DevOps
+              <span style={{color: 'var(--accent-cyan)'}}>🗄️</span> Database & Caching
             </div>
-            <p style={{color: 'var(--text-muted)'}}>Agentic orchestration and CI/CD pipelines.</p>
+            <p style={{color: 'var(--text-muted)'}}>Schema normalization and high-speed retrieval.</p>
+            <div className="skill-pills">
+              <span className="skill-pill">MongoDB / Mongoose</span>
+              <span className="skill-pill">MySQL</span>
+              <span className="skill-pill">Redis</span>
+            </div>
+          </div>
+
+          <div className="bento-card glass-panel">
+            <div className="bento-header">
+              <span style={{color: 'var(--accent-purple)'}}>🧠</span> AI Orchestration
+            </div>
+            <p style={{color: 'var(--text-muted)'}}>Supervising AI workflows and preventing technical debt.</p>
             <div className="skill-pills">
               <span className="skill-pill">Agentic Workflows</span>
-              <span className="skill-pill">Cursor / Prompting</span>
+              <span className="skill-pill">Systematic Prompting</span>
+              <span className="skill-pill">Cursor / Copilot</span>
+            </div>
+          </div>
+
+          <div className="bento-card glass-panel large">
+            <div className="bento-header">
+              <span style={{color: 'var(--accent-cyan)'}}>☁️</span> DevOps & Quality Assurance
+            </div>
+            <p style={{color: 'var(--text-muted)'}}>End-to-end pipeline automation and test-driven environments.</p>
+            <div className="skill-pills">
               <span className="skill-pill">Docker</span>
-              <span className="skill-pill">AWS</span>
+              <span className="skill-pill">AWS (Cloud Practitioner)</span>
               <span className="skill-pill">CI/CD Pipelines</span>
+              <span className="skill-pill">Jest / Mocha</span>
+              <span className="skill-pill">TDD Frameworks</span>
+              <span className="skill-pill">PM2</span>
             </div>
           </div>
 
