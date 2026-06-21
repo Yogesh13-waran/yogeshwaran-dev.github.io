@@ -49,7 +49,7 @@ function App() {
             <div className="hero-header-row">
               <div className="profile-image-container">
                 {/* User can replace profile.jpeg in the public folder */}
-                <img src="/profile.jpeg" alt="Yogeshwaran G" className="profile-image" onError={(e) => { e.currentTarget.src = 'https://ui-avatars.com/api/?name=YG&background=0a0a0a&color=00f0ff&size=150' }} />
+                <img src={`${import.meta.env.BASE_URL}profile.jpeg`} alt="Yogeshwaran G" className="profile-image" onError={(e) => { e.currentTarget.src = 'https://ui-avatars.com/api/?name=YG&background=0a0a0a&color=00f0ff&size=150' }} />
               </div>
               <div>
                 <p className="hero-greeting font-mono">Hi, my name is</p>
@@ -66,8 +66,7 @@ function App() {
             </p>
 
             <div className="hero-actions" style={{ marginTop: '1rem' }}>
-              {/* Removed leading slash so it works with GitHub Pages base path */}
-              <a href="Yogeshwaran_Resume.pdf" target="_blank" rel="noreferrer" className="skill-pill" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '1rem', padding: '0.75rem 1.5rem', background: 'var(--accent-cyan-glow)', borderColor: 'var(--accent-cyan)' }}>
+              <a href={`${import.meta.env.BASE_URL}Yogeshwaran_Resume.pdf`} target="_blank" rel="noreferrer" className="skill-pill" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '1rem', padding: '0.75rem 1.5rem', background: 'var(--accent-cyan-glow)', borderColor: 'var(--accent-cyan)' }}>
                 <span>📄</span> Download Resume
               </a>
             </div>
